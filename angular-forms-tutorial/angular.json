@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-forms-tutorial"
+    }
+  },
+  "defaultProject": "angular-forms-tutorial",
+  "cli": {
+    "analytics": false
+  }
 }
