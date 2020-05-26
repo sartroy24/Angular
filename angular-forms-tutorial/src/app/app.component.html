@@ -3,7 +3,7 @@
   <div class="alert alert-danger" *ngIf="errorMsg"> 
     {{errorMsg}}
   </div>
-  <form #userForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit()" novalidate>
+  <form #userForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit(userForm)" novalidate>
 
 
     {{userForm.form.valid}}
@@ -67,3 +67,4 @@
     <button [disabled]="userForm.form.invalid || topicHasError" class="btn btn-primary" type="submit">Submit Form</button>
   </form>
 </div>
+
